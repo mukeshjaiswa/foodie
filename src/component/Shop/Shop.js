@@ -7,7 +7,7 @@ export default function Shop() {
     return (
         <div id='shop' className='w-[80%] m-auto mt-10'>
             <div className='w-full flex flex-col items-center justify-center'>
-                <h1 className='font-bold text-2xl '>Food shop</h1>
+                <h1 className='text-4xl font-bold text-center mb-2'>Food shop</h1>
                 <p className='text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ex animi explicabo. Voluptate quibusdam id autem dolorem, modi, consequuntur tempore quos dignissimos sapiente sequi numquam fugit neque eligendi quas tenetur.</p>
                 <div className='mt-5 grid sm:grid-cols-2 md:grid-cols-3 gap-2 '>
                     {shopdata.map((items) => (
