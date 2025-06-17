@@ -10,7 +10,7 @@ export default function Customer() {
             <div className='space-y-4'>
                 <h1 className='text-4xl font-bold text-center'> Our Customer's</h1>
                 <p className='text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quis exercitationem nesciunt consectetur amet dolore ex, neque aliquid, alias tempora asperiores quisquam saepe at quasi! Sed obcaecati corrupti dicta incidunt?</p>
-                <div className='grid sm:grid-cols-2 md:grid-cols-3 mt-5 gap-5'>
+                <div className='grid md:grid-cols-2 lg:grid-cols-3 mt-5  gap-5'>
                     {customer.map((items) => (
                         <div key={items.id} className='flex flex-col items-center justify-center space-y-3 hover:bg-red-100 cursor-pointer mb-5 shadow-md py-2 rounded-md '>
                             <img src={items.image} alt="" className='w-[80px] h-[80px] rounded-full' />

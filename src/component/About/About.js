@@ -9,10 +9,10 @@ export default function About() {
        <div className=' w-full flex flex-col justify-center items-center mt-10 '>
            <h1 className='text-white text-2xl font-bold mt-10'>TODAY DEAL'S</h1>
 
-           <div className='sm:w-[70%]  m-auto py-3 bg-white flex flex-wrap items-center justify-center gap-10 px-1 border-t-4 rounded-md border-green-400'>
+           <div className='sm:w-[70%]  m-auto py-3 bg-white flex flex-wrap items-center justify-center gap-10 px-1 border-t-4 rounded-md border-green-400 '>
                {todaydata.map((items)=>(
-                <div key={items.id} className='flex flex-col items-center '>
-                   <img src={items.image} alt="" className='w-[100px] h-[100px] rounded-full' />
+                <div key={items.id} className='flex flex-col items-center group overflow-hidden '>
+                   <img src={items.image} alt="" className='w-[100px] h-[100px] rounded-full transition-transform duration-300 group-hover:scale-110 cursor-pointer' />
                    <h1 className='font-sans font-semibold'>{items.text}</h1>
                    <p  className='font-sans font-semibold'>{items.with}</p>
                    <p className='font-bold text-green-600'>${items.price}</p>
