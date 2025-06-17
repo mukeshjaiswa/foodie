@@ -2,7 +2,7 @@ import { Menu, X } from 'lucide-react'
 import React from 'react'
 import { useState } from 'react'
 import { useEffect } from 'react';
-import { a } from 'react-router';
+
 import logo from '../../assest/logo.jpg'
 
 export default function Navbar() {
@@ -34,7 +34,7 @@ export default function Navbar() {
                         <a href='#about' className={`list-none px-2 py-1 text-center hover:bg-[#15e915] rounded-sm  cursor-pointer hover:text-white font-semibold ${isScrolled ? 'text-white  bg-transparent'  : 'text-black'}`}>About</a>
                         <a href='#shop' className={`list-none px-2 py-1 text-center hover:bg-[#15e915] rounded-sm  cursor-pointer hover:text-white font-semibold ${isScrolled ? 'text-white bg-transparent'  : 'text-black'}`}>Shop</a>
                         <a href='#customer' className={`list-none px-2 py-1 text-center hover:bg-[#15e915] rounded-sm  cursor-pointer hover:text-white font-semibold ${isScrolled ? 'text-white  bg-transparent'  : 'text-black'}`}>Customer</a>
-                        <li className={`list-none px-2 py-1 text-center hover:bg-[#15e915] rounded-sm  cursor-pointer hover:text-white font-semibold ${isScrolled ? 'text-white bg-transparent'  : 'text-black'}`}>Contact</li>
+                        <a href='#contact' className={`list-none px-2 py-1 text-center hover:bg-[#15e915] rounded-sm  cursor-pointer hover:text-white font-semibold ${isScrolled ? 'text-white bg-transparent'  : 'text-black'}`}>Contact</a>
                     </ul>
                     <div className='sm:hidden p-2 rounded-md border border-green-500'>
                         {!openmenu ?
@@ -55,14 +55,14 @@ export default function Navbar() {
                             <div className=' absolute right-2 top-2  rounded-md  '>
                             <X size={30} onClick={handleropenmenu} />
                         </div>
-                            <ul className=' w-full     mt-10 border-t '>
+                            <ul className=' w-full flex flex-col     mt-10 border-t '>
                             
 
-                                <li className='w-full  border-b py-3 list-none px-2text-center hover:bg-[#73fb73] rounded-sm  cursor-pointer hover:text-white font-semibold px-5 '>Home</li>
-                                <li className='w-full  border-b py-3 list-none px-2text-center hover:bg-[#73fb73] rounded-sm  cursor-pointer hover:text-white font-semibold px-5 '>About</li>
-                                <li className='w-full  border-b py-3 list-none px-2text-center hover:bg-[#73fb73] rounded-sm  cursor-pointer hover:text-white font-semibold px-5 '>Shop</li>
-                                <li className='w-full border-b py-3 list-none px-2text-center hover:bg-[#73fb73] rounded-sm  cursor-pointer hover:text-white font-semibold px-5 '>Customer</li>
-                                <li className='w-full  border-b py-3 list-none px-2text-center hover:bg-[#73fb73] rounded-sm  cursor-pointer hover:text-white font-semibold px-5 '>Contact</li>
+                                <a href='/' className='w-full  border-b py-3 list-none px-2text-center hover:bg-[#73fb73] rounded-sm  cursor-pointer hover:text-white font-semibold px-5 '  onClick={handleropenmenu}>Home</a>
+                                <a href='#about' className='w-full  border-b py-3 list-none px-2text-center hover:bg-[#73fb73] rounded-sm  cursor-pointer hover:text-white font-semibold px-5 '  onClick={handleropenmenu}>About</a>
+                                <a href='#shop' className='w-full  border-b py-3 list-none px-2text-center hover:bg-[#73fb73] rounded-sm  cursor-pointer hover:text-white font-semibold px-5 '  onClick={handleropenmenu}>Shop</a>
+                                <a href='#customer' className='w-full border-b py-3 list-none px-2text-center hover:bg-[#73fb73] rounded-sm  cursor-pointer hover:text-white font-semibold px-5 '  onClick={handleropenmenu}>Customer</a>
+                                <a href='#contact' className='w-full  border-b py-3 list-none px-2text-center hover:bg-[#73fb73] rounded-sm  cursor-pointer hover:text-white font-semibold px-5 '  onClick={handleropenmenu}>Contact</a>
                             </ul>
                         </div> 
                         </div>

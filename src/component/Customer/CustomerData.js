@@ -1,4 +1,4 @@
-import React from 'react'
+
 import mukesh from '../../assest/mukesh.jpg'
 import dipesh from '../../assest/dipesh.jpg'
 import sujan from '../../assest/sujan.jpg'

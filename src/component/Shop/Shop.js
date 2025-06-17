@@ -1,6 +1,6 @@
 import { ShoppingCart } from 'lucide-react'
 import React from 'react'
-import chicken from '../../assest/chicken.jpeg'
+
 import { shopdata } from '../Data/Data'
 
 export default function Shop() {

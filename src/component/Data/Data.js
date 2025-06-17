@@ -1,4 +1,4 @@
-import React from 'react'
+
 import chickensalad from '../../assest/chicken salad.jpeg'
 import chicken from '../../assest/chicken.jpeg'
 import greensalad from '../../assest/green salad.jpeg'
